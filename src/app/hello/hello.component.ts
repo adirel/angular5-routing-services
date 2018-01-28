@@ -14,7 +14,7 @@ export class HelloComponent implements OnInit {
   ngOnInit() {
   }
   goToByeBye() {
-    this.route.navigate(['/goodbye' + this.name]);
+    this.route.navigate(['/goodbye/' + this.name]);
   }
 
 }

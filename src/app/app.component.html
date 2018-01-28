@@ -1,7 +1,7 @@
 <h1> Routing Course</h1>
 <ul>
   <li><a routerLink="/hello">Hello</a></li>
-  <li><a routerLink="/goodbye">GoodBye</a></li>
+  <li><a [routerLink]="['/goodbye']" [queryParams]="{name:'Moshe', age:'19'}">GoodBye</a></li>
 </ul>
 <router-outlet></router-outlet>
 

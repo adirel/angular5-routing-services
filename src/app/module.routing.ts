@@ -6,7 +6,7 @@ import { NotexistComponent } from './notexist/notexist.component';
 
 const routes: Routes = [
     { path: 'hello', component: HelloComponent },
-    { path: 'goodbye', component: GoodByeComponent },
+    { path: 'goodbye/:name', component: GoodByeComponent },
     { path: '**', component: NotexistComponent },
     {
       path: '',

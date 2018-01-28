@@ -15,6 +15,9 @@ export class GoodByeComponent implements OnInit {
     this.router = this.active.params.subscribe(params => {
       this.name = params.name;
     });
+    this.active.queryParams.subscribe(params => {
+      console.log(params);
+    });
   }
 
 }
