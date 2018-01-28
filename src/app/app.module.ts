@@ -5,21 +5,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { Route } from '@angular/compiler/src/core';
 import { HelloComponent } from './hello/hello.component';
+import { NotexistComponent } from './notexist/notexist.component';
+import { routing } from './module.routing';
 
-const routes: Routes = [
-  { path: 'hello', component: HelloComponent },
-  { path: 'goodbye', component: GoodByeComponent },
-];
+
 
 @NgModule({
   declarations: [
     AppComponent,
     GoodByeComponent,
-    HelloComponent
+    HelloComponent,
+    NotexistComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
