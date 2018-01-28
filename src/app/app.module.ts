@@ -7,8 +7,7 @@ import { Route } from '@angular/compiler/src/core';
 import { HelloComponent } from './hello/hello.component';
 import { NotexistComponent } from './notexist/notexist.component';
 import { routing } from './module.routing';
-
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +18,7 @@ import { routing } from './module.routing';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     routing
   ],
   providers: [],

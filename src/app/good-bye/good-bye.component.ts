@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-good-bye',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./good-bye.component.css']
 })
 export class GoodByeComponent implements OnInit {
-
-  constructor() { }
+  router: any;
+  name: any;
+  constructor(private active: ActivatedRoute) { }
 
   ngOnInit() {
+    this.router = this.active.params.subscribe(params => {
+      this.name = params.name;
+    });
   }
 
 }
